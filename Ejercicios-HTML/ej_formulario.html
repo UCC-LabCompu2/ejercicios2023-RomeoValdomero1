@@ -18,26 +18,72 @@
     https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_output-->
 
 <h3>Suscribase a Nuestro Portal de Noticias! Crear una cuenta es rápido!</h3>
-Nombre:
-Apellido:
-Sexo: Masculino Femenino
-Edad:
-Email:
-Usuario:
-Password:
-Confirmar Password:
+<form id="formulario">
+    <p>
+       <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="nombre" id="nombre">
+    </p>
+    <p>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" placeholder="apellido" id="apellido">
+    </p>
+    <p>
+        Sexo:
+        <label for="masculino">Masculino</label>
+         <input type="radio" name="sexo" value="masculino" id="masculino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="sexo" value="femenino" id="femenino">
+    </p>
+    <p>
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" placeholder="edad" id="edad">
+    </p>
+    <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="email" id="email">
+    </p>
+    <p>
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" placeholder="usuario" id="usuario">
+    </p>
+    <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="password" id="password">
+    </p>
+    <p>
+        <label for="confirmarPassword">Confirmar Password:</label>
+        <input type="text" name="apellido" placeholder=" confirmar password" id="confirmarPassword">
+    </p>
+    <p>
+        Tipo de servicio:
+        <label for="free">Free</label>
+         <input type="checkbox" name="tipo de ervicio" id="free">
+        <label for="standard">/ Standard</label>
+         <input type="checkbox" name="tipo de ervicio" id="standard" >
+        <label for="premium">/ Premium</label>
+        <input type="checkbox" name="tipo de ervicio" id="premium">
+    </p>
+    <p>
+        <label for="tema">Tema:</label>
+        <select id="tema">
+        <option value="politica"> Política</option>
+        <option value="negocios">Negocios</option>
+        <option value="tecnologia">Tecnología</option>
+        <option value="salud">Salud</option>
 
-Tipo de servicio: Free / Standard / Premium
-Tema:
-Política
-Negocios
-Tecnología
-Salud
+    </select>
 
-Agregue un comentario:
+    </p>
+    <p>
+        <label for="agregueComentario">Agregue un comentario:</label>
+         <textarea id="agregueComentario">agrega un comentario </textarea>
+    </p>
+    <p>
+        <label for="enviar">enviar formulario:</label>
+        <button type="button" id="enviar">Enviar</button>
+    </p>
 
-Boton de Enviar
-
+</form>
 
 </body>
 </html>
